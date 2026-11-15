@@ -1,0 +1,20 @@
+{
+  "name": "zkverify-gatekeeper-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/run-tests.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "snarkjs": "^0.7.5"
+  },
+  "type": "module"
+}

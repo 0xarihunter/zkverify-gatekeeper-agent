@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: zkverify-gatekeeper-agent
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: AGENT_GAMES_HMAC_SECRET
+        sync: false # set from the Agent Games dashboard secret after agent registration
+      - key: NODE_ENV
+        value: production
